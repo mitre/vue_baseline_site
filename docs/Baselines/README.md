@@ -1,5 +1,7 @@
 <template>
   <div>
+    <h1 align="center">Framework Baselines</h1>
+    <br>
     <BaseRow v-for="section in sections" :section="section" :baselines="baselines"></BaseRow>
   </div>
 </template>
@@ -33,7 +35,7 @@ export default {
       .catch(error => {
         console.log('There was an error:', error.response)
       })
-  },
+  }
 };
 </script>
 

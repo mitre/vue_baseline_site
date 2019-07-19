@@ -1,8 +1,7 @@
 <template>
   <div>
     <button
-      @click="reroute; sharedData.selectedHistoryRow = this.route; sharedData.showModal = true;"
-      class="button"
+      @click="reroute(); this.sharedData.selectedHistoryRow = this.route; this.sharedData.showModal = true;"
     >
       <slot></slot>
     </button>
@@ -14,12 +13,14 @@ import sharedData from "../observables/history.js";
 
 export default {
   data: () => ({ sharedData }),
+
   props: {
     name: {
       type: String,
       required: true
     },
-    route: String
+    route: String,
+    color: String
   },
   methods: {
     reroute(event) {
@@ -37,21 +38,21 @@ export default {
 </script>
 
 <style scoped>
-.button {
-  background-color: #3377ff; /* Blue background */
-  border: 1px solid blue; /* Blue border */
+button {
+  background-color: #2362df; /* Blue background, default */
   color: white; /* White text */
   padding: 20px 20px; /* Some padding */
   cursor: pointer; /* Pointer/hand icon */
   font-size: 16px;
   display: inline-block;
-  height: 75px;
+  height: 70px;
+  width: 20vw;
 }
-.button:not(:last-child) {
+button:not(:last-child) {
   border-right: none; /* Prevent double borders */
 }
 /* Add a background color on hover */
-.button:hover {
-  background-color: #0044cc;
+button:hover {
+  background-color: rgb(66, 80, 109);
 }
 </style>

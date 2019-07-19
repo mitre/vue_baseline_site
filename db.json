@@ -1,12 +1,12 @@
 {
   "sections": [
-    "Web Server",
-    "Application Server",
-    "Database",
-    "Containers",
-    "Operating Systems",
-    "Network Components",
-    "Cloud Services"
+    { "name": "Web Server", "color": "#6f88f2" },
+    { "name": "Application Server", "color": "#6580f7" },
+    { "name": "Database", "color": "#5976f7" },
+    { "name": "Containers", "color": "#4d6cf7" },
+    { "name": "Operating Systems", "color": "#3b5ef7" },
+    { "name": "Network Components", "color": "#2a50f7" },
+    { "name": "Cloud Services", "color": "#1b44f7" }
   ],
   "baselines": [
     {
