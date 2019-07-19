@@ -6,7 +6,7 @@ module.exports = {
     nav: [
       { text: "Home", link: "/" },
       { text: "About", link: "/about/" },
-      { text: "Applications", link: "/applications/" },
+      { text: "Applications", link: "/Applications/" },
       { text: "Baselines", link: "/baselines/" },
       {
         text: "Community",
@@ -18,7 +18,7 @@ module.exports = {
       { text: "GitHub", link: "https://github.com/mitre" }
     ],
     sidebar: {
-      "/applications/": [
+      "/Applications/": [
         "",
         "nginx-baseline",
         "red-hat-enterprise-linux-6-stig-baseline",
