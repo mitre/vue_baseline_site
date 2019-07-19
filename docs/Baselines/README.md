@@ -4,6 +4,7 @@
     <br>
     <BaseRow v-for="section in sections" :section="section" :baselines="baselines"></BaseRow>
   </div>
+ 
 </template>
 
 <script>

@@ -5,9 +5,9 @@ module.exports = {
     logo: "/logo.png",
     nav: [
       { text: "Home", link: "/" },
-      { text: "About", link: "/about/" },
-      { text: "Applications", link: "/applications/" },
-      { text: "Baselines", link: "/baselines/" },
+      { text: "About", link: "/About/" },
+      { text: "Applications", link: "/Applications/" },
+      { text: "Baselines", link: "/Baselines/" },
       {
         text: "Community",
         items: [
@@ -18,7 +18,7 @@ module.exports = {
       { text: "GitHub", link: "https://github.com/mitre" }
     ],
     sidebar: {
-      "/applications/": [
+      "/Applications/": [
         "",
         "nginx-baseline",
         "red-hat-enterprise-linux-6-stig-baseline",
