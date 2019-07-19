@@ -1,6 +1,6 @@
 <template lang="html">
   <div>
-    <h3 v-show="showModal">{{selectedHistoryRow}}</h3>
+    <h1 v-if="showModal">{{selectedHistoryRow}}</h1>
    <vs-table
      max-items="10"
      pagination

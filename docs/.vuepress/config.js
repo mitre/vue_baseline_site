@@ -5,9 +5,9 @@ module.exports = {
     logo: "/logo.png",
     nav: [
       { text: "Home", link: "/" },
-      { text: "About", link: "/about/" },
+      { text: "About", link: "/About/" },
       { text: "Applications", link: "/Applications/" },
-      { text: "Baselines", link: "/baselines/" },
+      { text: "Baselines", link: "/Baselines/" },
       {
         text: "Community",
         items: [
