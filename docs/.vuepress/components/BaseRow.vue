@@ -48,7 +48,7 @@ export default {
   },
   props: {
     section: {
-      type: Object,
+      type: String,
       required: true
     },
     baselines: {
