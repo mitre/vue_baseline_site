@@ -60,12 +60,8 @@
     },
     {
       "name": "Docker CIS Benchmark",
-      "route": "cis-docker-ce-baseline/",
+      "route": "cis-docker-community-edition-baseline/",
       "sections": ["Containers"]
-    },
-    {
-      "name": "Apache WildFly",
-      "sections": ["Application Server"]
     },
     {
       "name": "JBoss STIG",
@@ -122,6 +118,7 @@
     },
     {
       "name": "RHEL 6/7 STIG, CVE",
+      "route": "red-hat-enterprise-linux-6-stig-baseline/",
       "sections": ["Operating Systems"]
     },
     {

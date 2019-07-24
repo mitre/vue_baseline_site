@@ -1,10 +1,12 @@
 <template>
   <div>
     <button
-      @click="reroute(); this.sharedData.selectedHistoryRow = this.route; this.sharedData.showModal = true;"
+      @click="reroute(); this.sharedData.selectedHistoryRow = this.$site; this.sharedData.showModal = true;"
     >
       <slot></slot>
     </button>
+        <h1 {{this.$route}}</h1>
+
   </div>
 </template>
 
@@ -25,12 +27,11 @@ export default {
   methods: {
     reroute(event) {
       if (this.route == null) {
-        this.$router.push("/Applications/");
         alert(
           "The specific route hasn't been found. You will be redirected to a list of the baselines."
         );
       } else {
-        this.$router.push("/Applications/" + this.route);
+        this.$router.push("/Baselines/" + this.route);
       }
     }
   }
